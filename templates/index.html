@@ -64,8 +64,17 @@ function calci() {
 
     var relaxed = document.getElementById("relaxed");
     var relaxedValue = parseFloat(relaxed.value);
+    
+    var tensed = document.getElementById("tensed");
+    var tensedValue = parseFloat(tensed.value);
 
-    var answer = depressedValue + relaxedValue ;
+	var worried = document.getElementById("worried");
+    var worriedValue = parseFloat(worried.value);
+
+	var upset = document.getElementById("upset");
+    var upsetValue = parseFloat(upset.value);
+
+    var answer = depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue ;
     document.getElementById("answer").value = answer.toString();
 }
 </script>
@@ -83,6 +92,21 @@ Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agre
 <br>
 
 2. How Relaxed are you today?  <input type="text" id="relaxed">
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+3. How Tensed are you today?  <input type="text" id="tensed">
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+4. Are you worried today?  <input type="text" id="worried">
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+5.Do you get easily upset?  <input type="text" id="upset">
 <br>
 Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
 <br>
