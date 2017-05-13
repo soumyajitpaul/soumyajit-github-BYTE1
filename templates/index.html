@@ -59,48 +59,48 @@
 <script type="text/javascript">
 		function calc() {
 
-	var depressed = document.getElementById("depressed");
-    	var depressedValue = parseFloat(depressed.value);
+			var depressed = document.getElementById("depressed");
+    		var depressedValue = parseFloat(depressed.value);
 
-	var relaxed = document.getElementById("relaxed");
-    	var relaxedValue = parseFloat(relaxed.value);
+			var relaxed = document.getElementById("relaxed");
+  		    var relaxedValue = parseFloat(relaxed.value);
 
-	var tensed = document.getElementById("tensed");
-    	var tensedValue = parseFloat(tensed.value);
+			var tensed = document.getElementById("tensed");
+    		var tensedValue = parseFloat(tensed.value);
 
-	var worried = document.getElementById("worried");
-    	var worriedValue = parseFloat(worried.value);
+			var worried = document.getElementById("worried");
+    		var worriedValue = parseFloat(worried.value);
 
-	var upset = document.getElementById("upset");
-    	var upsetValue = parseFloat(upset.value);
+			var upset = document.getElementById("upset");
+    		var upsetValue = parseFloat(upset.value);
 
-	var moody = document.getElementById("moody");
-    	var moodyValue = parseFloat(moody.value);
+			var moody = document.getElementById("moody");
+    		var moodyValue = parseFloat(moody.value);
 
-	var calm = document.getElementById("calm");
-    	var calmValue = parseFloat(calm.value);
+			var calm = document.getElementById("calm");
+    		var calmValue = parseFloat(calm.value);
 
-	var nervous = document.getElementById("nervous");
-    	var nervousValue = parseFloat(nervous.value);
+			var nervous = document.getElementById("nervous");
+    		var nervousValue = parseFloat(nervous.value);
 
-    	var sleep_hours = document.getElementById("sleep_hours");
-    	var sleep_hoursValue = parseFloat(sleep_hours.value);
+    		var sleep_hours = document.getElementById("sleep_hours");
+    		var sleep_hoursValue = parseFloat(sleep_hours.value);
 
-   	var exercise_hours = document.getElementById("exercise_hours");
-    	var exercise_hoursValue = parseFloat(exercise_hours.value);
+   			var exercise_hours = document.getElementById("exercise_hours");
+    		var exercise_hoursValue = parseFloat(exercise_hours.value);
 
-   	var deadlines = document.getElementById("deadlines");
-    	var deadlinesValue = parseFloat(deadlines.value);
+   			var deadlines = document.getElementById("deadlines");
+    		var deadlinesValue = parseFloat(deadlines.value);
 
-	var relax = document.getElementById("relax");
-    	var relaxValue = parseFloat(relax.value);
+			var relax = document.getElementById("relax");
+    		var relaxValue = parseFloat(relax.value);
 
-	var work = document.getElementById("work");
-    	var workValue = parseFloat(work.value);
+			var work = document.getElementById("work");
+    		var workValue = parseFloat(work.value);
 	
-    	var score =  ((depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue + moodyValue + calmValue + nervousValue)/8 )+ 	(1.5 * sleep_hoursValue + 2 * exercise_hoursValue + 2 * deadlinesValue + 1.125 * relaxValue + 1.25 * workValue) ;
-    	document.getElementById("score").value = score.toString();
-}
+    		var score = ((depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue + moodyValue + calmValue + nervousValue)/8 )+ 	(1.5 * sleep_hoursValue + 2 * exercise_hoursValue + 2 * deadlinesValue + 1.125 * relaxValue + 1.25 * workValue) ;
+    		document.getElementById("score").value = score.toString();
+ }
 </script>
 <br>
 
