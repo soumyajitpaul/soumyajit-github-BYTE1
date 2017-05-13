@@ -73,8 +73,18 @@ function calci() {
 
 	var upset = document.getElementById("upset");
     var upsetValue = parseFloat(upset.value);
+    
+    var moody = document.getElementById("moody");
+    var moodyValue = parseFloat(moody.value);
+    
+	var calm = document.getElementById("calm");
+    var calmValue = parseFloat(calm.value);
 
-    var answer = depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue ;
+	var nervous = document.getElementById("nervous");
+    var nervousValue = parseFloat(nervous.value);
+
+
+    var answer = (depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue + moodyValue + calmValue + nervousValue)/8 ;
     document.getElementById("answer").value = answer.toString();
 }
 </script>
@@ -107,6 +117,21 @@ Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agre
 <br>
 
 5.Do you get easily upset?  <input type="text" id="upset">
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+6. Does your mood changes quickly?  <input type="text" id="moody">
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+7. Do you remain calm in tensed situation?  <input type="text" id="calm">
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+8. Do you easily get nervous?  <input type="text" id="nervous">
 <br>
 Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
 <br>
