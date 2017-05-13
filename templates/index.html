@@ -58,24 +58,122 @@
    
 <script type="text/javascript">
 		function calc() {
+
+	var depressed = document.getElementById("depressed");
+    	var depressedValue = parseFloat(depressed.value);
+
+	var relaxed = document.getElementById("relaxed");
+    	var relaxedValue = parseFloat(relaxed.value);
+
+	var tensed = document.getElementById("tensed");
+    	var tensedValue = parseFloat(tensed.value);
+
+	var worried = document.getElementById("worried");
+    	var worriedValue = parseFloat(worried.value);
+
+	var upset = document.getElementById("upset");
+    	var upsetValue = parseFloat(upset.value);
+
+	var moody = document.getElementById("moody");
+    	var moodyValue = parseFloat(moody.value);
+
+	var calm = document.getElementById("calm");
+    	var calmValue = parseFloat(calm.value);
+
+	var nervous = document.getElementById("nervous");
+    	var nervousValue = parseFloat(nervous.value);
+
     	var sleep_hours = document.getElementById("sleep_hours");
     	var sleep_hoursValue = parseFloat(sleep_hours.value);
 
-   		var exercise_hours = document.getElementById("exercise_hours");
+   	var exercise_hours = document.getElementById("exercise_hours");
     	var exercise_hoursValue = parseFloat(exercise_hours.value);
 
-    	var answer =  sleep_hoursValue + exercise_hoursValue ;
-    	document.getElementById("answer").value = answer.toString();
+   	var deadlines = document.getElementById("deadlines");
+    	var deadlinesValue = parseFloat(deadlines.value);
+
+	var relax = document.getElementById("relax");
+    	var relaxValue = parseFloat(relax.value);
+
+	var work = document.getElementById("work");
+    	var workValue = parseFloat(work.value);
+	
+    	var Score =  ((depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue + moodyValue + calmValue + nervousValue)/8 )+ 	(1.5 * sleep_hoursValue + 2 * exercise_hoursValue + 2 * deadlinesValue + 1.125 * relaxValue + 1.25 * workValue) ;
+    	document.getElementById("Score").value = Score.toString();
 }
 </script>
 
-Enter Number of Hours of Sleep: <input type="text" id="sleep_hours">
+1. Are you feeling Depressed today?  <input type="text" id=“depressed”>
 <br>
-Enter Number of Hours of Exercise: <input type="text" id="exercise_hours">
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
 <br>
-Answer: <input type="text" id="answer" />
+
+2. How Relaxed are you today?  <input type="text" id=“relaxed”>
 <br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+3. How Tensed are you today?  <input type="text" id=“tensed”>
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+4. Are you worried today?  <input type="text" id=“worried”>
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+5.Do you get easily upset?  <input type="text" id=“upset”>
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+6. Does your mood changes quickly?  <input type="text" id=“moody”>
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+7. Do you remain calm in tensed situation?  <input type="text" id=“calm”>
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+8. Do you easily get nervous?  <input type="text" id=“nervous”>
+<br>
+Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
+<br>
+
+9. Enter Number of Hours of Sleep you had today: <input type="text" id="sleep_hours">
+<br>
+Enter: 1: 3-5 hours , 2: 5-7 hours, 3: 7-9 hours, 4: 9-11 hours, 5: >11 hours
+<br>
+
+10. Enter Number of Hours of Exercise you have done today: <input type="text" id="exercise_hours">
+<br>
+Enter: 1: 0 hours , 2: 0-1 hours, 3: 1-2 hours, 4: 2-3 hours, 5: >3 hours
+<br>
+
+11. Enter Number of Deadlines you have today: <input type="text" id="exercise_hours">
+<br>
+Enter: 1: 0 deadlines , 2: 1(one) deadline, 3: 2(two) deadlines, 4: 3(three) deadlines, 5: >3 deadlines
+<br>
+
+12. Enter Number of Hours of relaxation you had today: <input type="text" id=“relax”>
+<br>
+Enter: 1: 0 hours , 2: 0-1 hours, 3: 1-2 hours, 4: 2-3 hours, 5: >3 hours
+<br>
+
+13. Enter Number of Hours of Work/Assignment you have spent today: <input type="text" id="exercise_hours">
+<br>
+Enter: 1: 0 hours , 2: 0-1 hours, 3: 1-3 hours, 4: 3-5 hours, 5: >5 hours
+<br>
+
+
+
 <button type="button" onclick="javascript:calc();"> Click</button>
+
+Score: <input type="text" id="Score" />
+<br>
 
 
     <div class="container">
