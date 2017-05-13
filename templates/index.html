@@ -98,7 +98,7 @@
 			var work = document.getElementById("work");
     		var workValue = parseFloat(work.value);
 	
-    		var score = depressedValue + relaxedValue ;
+    		var score = ((depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue + moodyValue + calmValue + nervousValue)/8 )+ ((1.5 * sleep_hoursValue) + (2 * exercise_hoursValue) + (2 * deadlinesValue )+ (1.12 * relaxValue )+ (1.25 * workValue)) ;
     		document.getElementById("score").value = score.toString();
  }
 </script>
