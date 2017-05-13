@@ -134,7 +134,7 @@ Answer: <input type="text" id="answer" />
 			var work = document.getElementById("work");
     		var workValue = parseFloat(work.value);
 	
-    		var answer = ((depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue + moodyValue + calmValue + nervousValue)/8 )+ ((1.5 * sleep_hoursValue) + (2 * exercise_hoursValue) + (2 * deadlinesValue )+ (1.12 * relaxValue )+ (1.25 * workValue)) ;
+    		var answer = depressedValue + relaxedValue + tensedValue + worriedValue + upsetValue + moodyValue + calmValue + nervousValue + sleep_hoursValue + exercise_hoursValue + deadlinesValue + relaxValue + workValue ;
     		document.getElementById("answer").value = answer.toString();
  }
 </script>
