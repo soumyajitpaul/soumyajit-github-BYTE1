@@ -53,6 +53,30 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    
+    
+   
+<script type="text/javascript">
+		function calc() {
+    	var sleep_hours = document.getElementById("sleep_hours");
+    	var sleep_hoursValue = parseFloat(sleep_hours.value);
+
+   		var exercise_hours = document.getElementById("exercise_hours");
+    	var exercise_hoursValue = parseFloat(exercise_hours.value);
+
+    	var answer =  sleep_hoursValue + exercise_hoursValue ;
+    	document.getElementById("answer").value = answer.toString();
+}
+</script>
+
+Enter Number of Hours of Sleep: <input type="text" id="sleep_hours">
+<br>
+Enter Number of Hours of Exercise: <input type="text" id="exercise_hours">
+<br>
+Answer: <input type="text" id="answer" />
+<br>
+<button type="button" onclick="javascript:calc();"> Click</button>
+
 
     <div class="container">
 
