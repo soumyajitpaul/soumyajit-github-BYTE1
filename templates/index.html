@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>User_Questionairre</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,13 +42,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">User Data</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Questionairre</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -111,7 +109,19 @@ function calci() {
 
 
 <br>
-1. Are you feeling Depressed today?  <input type="text" id="depressed">
+1. Are you feeling Depressed today?  
+
+<form action="/action_page.php">
+  <select name="depressed">
+    <option value="1">Strongly Disagree</option>
+    <option value="2">Somewhat Disagree</option>
+    <option value="3" selected>Neutral</option>
+    <option value="4">Somewhat Agree</option>
+    <option value="5">Strongly Disagree</option>
+  </select>
+  <br><br>
+  <input type="submit" id="depressed">
+</form>
 
 <br>
 Enter: 1: Strongly Disagree , 2: Somewhat Disagree, 3: Neutral, 4: Somewhat Agree, 5: Strongly Disagree
